@@ -5,52 +5,52 @@ export default {
         return {
             links: [
                 {
-                    label: 'characters',
+                    label: 'Characters',
                     url: '#',
                     current: true,
                 },
                 {
-                    label: 'comics',
+                    label: 'Comics',
                     url: '#',
                     current: false,
                 },
                 {
-                    label: 'movies',
+                    label: 'Movies',
                     url: '#',
                     current: false,
                 },
                 {
-                    label: 'tv',
+                    label: 'Tv',
                     url: '#',
                     current: false,
                 },
                 {
-                    label: 'games',
+                    label: 'Games',
                     url: '#',
                     current: false,
                 },
                 {
-                    label: 'collectibles',
+                    label: 'Collectibles',
                     url: '#',
                     current: false,
                 },
                 {
-                    label: 'videos',
+                    label: 'Videos',
                     url: '#',
                     current: false,
                 },
                 {
-                    label: 'fans',
+                    label: 'Fans',
                     url: '#',
                     current: false,
                 },
                 {
-                    label: 'news',
+                    label: 'News',
                     url: '#',
                     current: false,
                 },
                 {
-                    label: 'shop',
+                    label: 'Shop',
                     url: '#',
                     current: false,
                 },
@@ -79,15 +79,40 @@ export default {
 </template>
 
 <style lang="scss">
+@use '../styles/partials/variables' as *;
+
 header {
     display: flex;
     justify-content: space-between;
     margin: 10px 100px;
+    font-size: xx-small;
 
-    ul {
-        list-style: none;
-
+    img {
+        width: 60px;
     }
 
+    nav {
+        display: flex;
+        align-items: center;
+
+        ul {
+            list-style: none;
+            display: flex;
+
+            li {
+                margin: 0px 10px;
+                text-decoration: none;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+
+                    &.active {
+                        color: $primary_color;
+                    }
+                }
+            }
+        }
+    }
 }
 </style>

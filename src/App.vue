@@ -1,8 +1,12 @@
 <script>
 import HeaderApp from './components/HeaderApp.vue';
+import FooterApp from './components/FooterApp.vue';
+import MainApp from './components/MainApp.vue';
 export default {
   components: {
-    HeaderApp
+    HeaderApp,
+    FooterApp,
+    MainApp
   }
 
 }
@@ -10,6 +14,9 @@ export default {
 <template lang="">
   <div>
     <HeaderApp />
+    <MainApp />
+    <FooterApp />
+
   </div>
 </template>
 
